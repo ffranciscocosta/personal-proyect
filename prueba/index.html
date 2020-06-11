@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DIFICULTAD 3</title>
+  </head>
+
+  <body>
+    <button type="button" name="button" class="vueltaa"><a href="index.html" class="vuelta">Volver</a></button>
+    <h1 class="tituloDificultad">DIFICULTAD 3</h1>
+    <h3>Puntaje <span id="puntaje">0 </span> </h3>
+
+    <p>1- El que la compra no la usa. El que la hace no la necesita. El que la usa no sabe que la esta usando. ¿Que es?</p>
+    <br>
+    <ul>
+      <li onclick="responder('ok')">Una tumba</li>
+      <li onclick="responder()">Un wifi</li>
+      <li onclick="responder()">Un celular</li>
+    </ul>
+    <br>
+    <p>2- Dos personas estan comiendo manzanas. Si la primer persona le da dos manzanas a la segunda, tendrian la misma cantidad. Pero si le segunda persona le da dos manzanas a la primera, la primera tendeia el doble de manzanas que la
+      segunda.¿Cuantas manzanas tiene cada uno?</p>
+    <br>
+    <ul>
+      <li onclick="responder()">10 y 12</li>
+      <li onclick="responder()">6 y 8</li>
+      <li onclick="responder('ok')">10 y 14</li>
+    </ul>
+    <br>
+    <p>3- ¿Como se forma esta secuencia? 1 - 1 - 2 - 3 - 5 - 8 - 13 - 21.. </p>
+    <p>4- Si en una caja de 5 docenas, 3 de cada decena salen rotos¿Cuantos huevos quedan?</p>
+    <p>5- 3 + 3x3 + 3 = ?</p>
+    <br><br>
+    <p>6- Quien lo hace no lo dice <br>Quien lo recibe, no lo sabe <br>Quien lo sabe no lo quiere. <br>¿Que es?</p>
+    <br>
+    <p>7- “Un hombre se levanta por la noche y descubre que no hay luz en su habitación. Abre el cajón de los guantes, en el que hay diez guantes negros y diez azules. ¿Cuántos debe coger para asegurarse de que obtiene un par del mismo color?”</p>
+    <br>
+    <p>8- “¿En qué momento será correcta la operación 11+3=2?”</p>
+    <br>
+    <br>
+    <br>
+    <!-- <button type="button" onclick="mostrarRespuesta()" class="botonMostrarRespuesta">Mostrar respuestas</button> -->
+    <button type="button" name="button" onclick="mostrarRespuesta()" class="botonMostrarRespuesta">Mostrar explicaciones</button>
+    <button type="button" onclick="mostrarRespuesta()" class="botonNoMostrar">Dejar de mostrar explicaciones</button>
+    <br>
+    <p id="respuestas" class="respuestas">EXPLICACIONES:
+      1- Una tumba- Una persona viva no usa una tumba, los que las hacen estan vivos asi que no les sirven y los muertos no tienen conciencia.
+      <br><br>
+      2- 14 y 10 - Si el de 14 le da dos al otro ambos tendrian 12, y si el de 10 le da dos al otro tendrian 16 y 8(8 x 2 = 16)
+      <br><br>
+      3- Cuando cada numero se suma con el anterior - (1+1=2 - 2+1=3 - 3+2=5...)
+      <br><br>
+      4- 42 - 5 docenas = 60 -- hay 6 decenas en 60 -- 3 de 10 - 18 de 60
+      <br><br>
+      5- 15 - 3 + 9 + 3 = 15
+      <br>6- ---
+      <br>7- Si toma tres guantes si o si 2 serian del mismo color
+      <br>8- La afirmación es correcta si pensamos en las horas: si sumamos tres horas a las once, serán las dos.</p>
+
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+
+  <div>
+
+
+
+    <div>
+      <!--nro de pregunta 1 -->
+      En que año se descubrio america?
+    </div>
+
+
+
+
+    <br>
+
+    <div>
+      <!--nro de pregunta 2 -->
+      En que año se llego a la luna?
+    </div>
+
+
+    <ul>
+      <li onclick="responder()">1968</li>
+      <li onclick="responder()">1992</li>
+      <li onclick="responder('ok')">1969</li>
+    </ul>
+
+
+
+  </div>
+
+</html>

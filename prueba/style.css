@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+
+}
+
+header {
+  width: 75%;
+  margin: 35px auto;
+}
+
+header nav ul {
+  list-style: none;
+  background-color: rgb(20, 205, 94);
+  text-align: center;
+  border-radius: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: arial;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  background-color: black;
+  color: white;
+  transition: 0.8s all linear;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+body {
+  background-image: url(fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.respuestas {
+  display: none;
+}
+
+.botonMostrarRespuesta {
+  background-color: white;
+  border-color: black;
+  margin: 0px;
+  height: 30px;
+  width: 150px;
+
+}
+
+.botonMostrarRespuesta:hover{
+  background-color: black;
+  color: white;
+    transition: 0.8s all linear;
+}
+.botonNoMostrar{
+  display: none;
+  background-color: white;
+  border-color: black;
+  margin: 0px;
+  height: 30px;
+  width: 150px;
+}
+.vuelta {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  list-style: none;
+  text-align: center
+}
+
+.vueltaa {
+  background-color: white;
+  border-color: black;
+  /* margin: 0px; */
+  height: 30px;
+  width: 60px;
+}
+
+.vueltaa:hover {
+  background-color: black;
+  color: white;
+}
+
+.vuelta:hover {
+  background-color: black;
+  color: white;
+
+}
+.respuestas{
+  display: none;
+}
+.noOculto{
+  display: block;
+}
+p{
+  font-size: 17px;
+}
+/* .contenedor{
+overflow: hidden;
+transition: 0.8s;
+margin: 0px;
+}
+body{
+  background-color: black;
+}
+
+.difs{
+  color: white;
+  background-color: #3EE4AD;
+  width: 19%;
+  margin: 1px;
+  height: 70px;
+  display: inline-block;
+
+
+}
+
+ .dicicultad{
+
+ }
+
+a{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+ button{
+     border-radius: 5%;
+     border: 3px solid;
+     font-family: permanent-marker;
+     font-size:20px;
+     transition: 1s;
+     cursor: pointer;
+
+ }
+
+#titulo{
+  color: white;
+  font-family: montserrat;
+font-weight: bolder;
+}
+.difs:hover{
+  color: black;
+  background-color: rgb(62, 197, 215);
+  height: 75px;
+  border-radius: 1px solid;
+  border-color: white;
+
+}
+.vuelta{
+  background-color: black;
+  color: white;
+  border-radius: 1px solid;
+  border-color: black;
+  width: 15px;
+  height: 10px;
+}
+.vuelta:hover{
+  background-color: white;
+  color: black;
+  border-color: white;
+  width: 18px;
+  height: 15px;
+
+
+}
+.contenedor{
+align-items: center;
+align-content: center;
+} */

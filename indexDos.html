@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>DIFICULTAD 2</title>
+  </head>
+
+  <body id="body">
+    <button class="glow-on-hover" type="button"><a href="index.html">VOLVER</a></button>
+    <div class="containerDos">
+      <button type="button" id="cambiarTamaño" class="btn btn-border-1" onclick="agrandarTamaño()">Agrandar el tamaño de la letra</button>
+
+
+      <h1 class="tituloDificultad">DIFICULTAD 2</h1>
+      <h3>Puntaje: <span id="puntaje">0</span>/7 </h3>
+      <br>
+      <section id="animations" class="c-container">
+
+        <div class="o-circle__sign"></div>
+
+      </section>
+
+      <div class="" id="pregunta1-2">
+        <p class="parrafoPregunta"><span class="spanNumero">1) </span>Tengo tres manzanas y me quitas dos <span class="spanPregunta">¿Cuantas tenés?</span> </p>
+        <br>
+        <button onclick="responder(false, 'pregunta1-2')" class="posiblesRespuestas">1</button>
+        <br>
+        <button onclick="responder(true, 'pregunta1-2')" class="posiblesRespuestas">2</button>
+        <br>
+        <button onclick="responder(false, 'pregunta1-2')" class="posiblesRespuestas">3</button>
+        <br>
+      </div>
+
+
+      <div class="" id="pregunta2-2">
+        <p class="parrafoPregunta"><span class="spanNumero">2) </span>Existo solo donde hay luz, pero la luz directa me mata <span class="spanPregunta">¿Que soy?</span> </p>
+        <br>
+        <button onclick="responder(true, 'pregunta2-2')" class="posiblesRespuestas">La sombra</button>
+        <br>
+        <button onclick="responder(false, 'pregunta2-2')" class="posiblesRespuestas">La luz</button>
+        <br>
+        <button onclick="responder(false, 'pregunta2-2')" class="posiblesRespuestas">la vida</button>
+        <br>
+      </div>
+      <div class "" id="pregunta3-2">
+        <p class="parrafoPregunta"><span class="spanNumero">3) </span>Tengo 5 dedos pero no estoy vivo <span class="spanPregunta">¿Que soy?</span> </p>
+        <br>
+        <button onclick="responder(false, 'pregunta3-2')" class="posiblesRespuestas">Un sombrero</button>
+        <br>
+        <button onclick="responder(true, 'pregunta3-2')" class="posiblesRespuestas">Un guante</button>
+        <br>
+        <button onclick="responder(false, 'pregunta3-2')" class="posiblesRespuestas">3</button>
+        <br>
+      </div>
+      <div class "" id="pregunta4-2">
+        <p class="parrafoPregunta"><span class="spanNumero">4) </span>¿Cual es el número que si le quitas la mitad vale 0?</p>
+        <br>
+        <button onclick="responder(false, 'pregunta4-2')" class="posiblesRespuestas">3</button>
+        <br>
+        <button onclick="responder(false, 'pregunta4-2')" class="posiblesRespuestas">9</button>
+        <br>
+        <button onclick="responder(true, 'pregunta4-2')" class="posiblesRespuestas">8</button>
+        <br>
+      </div>
+      <div class "" id="pregunta5-2">
+        <p class="parrafoPregunta"><span class="spanNumero">5) </span>Cuando yo era pequeño, con 6 años de edad, mi amigo Juan tenía la mitad de edad. Ahora que acabo de cumplir 80 años <span class="spanPregunta">¿Qué edad tiene Juan?</span> </p>
+        <br>
+        <button onclick="responder(true, 'pregunta5-2')" class="posiblesRespuestas">77</button>
+        <br>
+        <button onclick="responder(false, 'pregunta5-2')" class="posiblesRespuestas">40</button>
+        <br>
+        <button onclick="responder(false, '´pregunta5-2')" class="posiblesRespuestas">78</button>
+        <br>
+      </div>
+      <div class "" id="pregunta6-2">
+        <p class="parrafoPregunta"><span class="spanNumero">6) </span>En una clase de 6º hay más de 20 y menos de 30 alumnos. Si se agrupan de 4 en 4 sobran 2 y si se agrupan de 5 en 5 sobra 1. <span class="spanPregunta">¿Cuántos alumnos hay en esa
+            clase?</span> </p>
+        <br>
+        <button onclick="responder(false, 'pregunta6-2')" class="posiblesRespuestas">25</button>
+        <br>
+        <button onclick="responder(true, 'pregunta6-2')" class="posiblesRespuestas">26</button>
+        <br>
+        <button onclick="responder(false, '´pregunta6-2')" class="posiblesRespuestas">27</button>
+        <br>
+      </div>
+      <div class="" id="pregunta7-3">
+        <p class="parrafoPregunta"><span class="spanNumero">7) </span>“Un hombre se levanta por la noche y descubre que no hay luz en su habitación. Abre el cajón de los guantes, en el que hay diez guantes negros y diez azules. <span
+            class="spanPregunta">¿Cuántos debe coger para asegurarse de que obtiene un par del mismo color?”</span> </p>
+        <br>
+        <button onclick="responder(false, 'pregunta7-2')" class="posiblesRespuestas">2</button>
+        <br>
+        <button onclick="responder(false, 'pregunta7-2')" class="posiblesRespuestas">4</button>
+        <br>
+        <button onclick="responder(true, 'pregunta7-2')" class="posiblesRespuestas">3</button>
+        <br>
+      </div>
+      <button type="button" name="button" onclick="mostrarRespuesta()" class="botonMostrarRespuesta">Mostrar explicaciones</button>
+      <button type="button" onclick="mostrarRespuesta()" class="botonNoMostrar">Ocultar explicaciones</button>
+      <br>
+      <p id="respuestas" class="respuestas">EXPLICACIONES:<br>1) La lanzas para arriba <br>2) La sombra <br>3) Un guante <br>4) El 8</p>
+      <script src="script.js" type="text/javascript"></script>
+  </body>
+
+
+
+</html>

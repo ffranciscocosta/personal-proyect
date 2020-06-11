@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>DIFICULTAD 5</title>
+  </head>
+
+  <body>
+    <button class="glow-on-hover" type="button"><a href="index.html">VOLVER</a></button>
+    <div class="containerDos">
+      <button type="button" id="cambiarTamaño" class="btn btn-border-1" onclick="agrandarTamaño()">Agrandar el tamaño de la letra</button>
+    </div>
+    <h1 class="tituloDificultad" class="vueltaa">DIFICULTAD 5</h1>
+    <h3>Puntaje: <span id="puntaje">0</span>/7 </h3>
+    <br>
+    <section id="animations" class="c-container">
+
+      <div class="o-circle__sign"></div>
+
+    </section>
+    <br>
+    <div class="" id="pregunta1-5">
+      <p class="parrafoPregunta"><span class="spanNumero">1) </span>Como es posible obtener estos resultados:<br>
+        8+2 = 16.106
+        <br>
+        5+4= 2.091
+        <br>
+        9+6 = 54.153
+        <br>
+        7+5 = 35.122
+      </p>
+      <br>
+      <button onclick="responder(false, 'pregunta1-5')" class="posiblesRespuestas">Primero multiplicando los numeros, despues restarlos y por ultimo sumarlos</button>
+      <br>
+      <button onclick="responder(true, 'pregunta1-5')" class="posiblesRespuestas">Primero multiplicando los numeros, despues sumarlos y por ultimo restarlos</button>
+      <br>
+      <button onclick="responder(false, 'pregunta1-5')" class="posiblesRespuestas">Primero sumar los numeros, despues multiplicarlos y por ultimo restarlos</button>
+      <br>
+    </div>
+    <div class="" id="pregunta2-5">
+      <p class="parrafoPregunta"><span class="spanNumero">2) </span>Cuando pasado mañana se convierta en ayer, hoy estará tan lejos del domingo como el dia que fue hoy cuando antes de ayer era mañana<span class="spanPregunta"> ¿Que dia es hoy?</span>
+      </p>
+      <br>
+      <button onclick="responder(true, 'pregunta2-5')" class="posiblesRespuestas">Jueves</button>
+      <br>
+      <button onclick="responder(false, 'pregunta2-5')" class="posiblesRespuestas">Sabado</button>
+      <br>
+      <button onclick="responder(false, 'pregunta2-5')" class="posiblesRespuestas">Lunes</button>
+      <br>
+    </div>
+    <div class="" id="pregunta3-5">
+      <p class="parrafoPregunta"><span class="spanNumero">3) </span>682 Un numero es correcto y en el lugar adecuado <br> 614 un número es correcto pero en el lugar equivocado <br> 206 dos numeros son correctos pero estan en el lugar equivocado <br>
+        738 no hay nada correcto <br>870
+        un numero es correcto
+        pero en el lugar equivocado <br><span class="spanPregunta">¿Cual cifra es?</span> </p>
+      <br>
+      <button onclick="responder(false, 'pregunta3-5')" class="posiblesRespuestas">862</button>
+      <br>
+      <button onclick="responder(true, 'pregunta3-5')" class="posiblesRespuestas">062</button>
+      <br>
+      <button onclick="responder(false, 'pregunta3-5')" class="posiblesRespuestas">064</button>
+      <br>
+    </div>
+    <div class="" id="pregunta4-5">
+      <p class="parrafoPregunta"><span class="spanNumero">4) </span class="spanPregunta">Como puede 98 pasar a 72 usando solo una letra?</p>
+      <br>
+      <button onclick="responder(false, 'pregunta4-5')" class="posiblesRespuestas">Poninedo una "y"</button>
+      <br>
+      <button onclick="responder(false, 'pregunta4-5')" class="posiblesRespuestas">Poniendo una ","</button>
+      <br>
+      <button onclick="responder(true, 'pregunta4-5')" class="posiblesRespuestas">Poniendo una "x"</button>
+      <br>
+    </div>
+    <div class="" id="pregunta5-5">
+      <p class="parrafoPregunta"><span class="spanNumero">5) </span>Si una gallina y media pone un huevo y medio en un dia y medio. <span class="spanPregunta"> ¿Cuantos huevos pondrian 6 gallinas en 6 días?</span></p>
+      <br>
+      <button onclick="responder(true, 'pregunta5-5')" class="posiblesRespuestas">24</button>
+      <br>
+      <button onclick="responder(false, 'pregunta5-5')" class="posiblesRespuestas">16</button>
+      <br>
+      <button onclick="responder(false, 'pregunta5-5')" class="posiblesRespuestas">36</button>
+      <br>
+    </div>
+    <div class="" id="pregunta6-5">
+      <p class="parrafoPregunta"><span class="spanNumero">6) </span>Una hormiga se cae a un poco de 30 metros de profundidad. Pasito a pasito, cada día sube 3 metros, pero al llegar la noche, cae dos metros.<span class="spanPregunta">¿Cuántos días
+          tardara la hormiga en salir del pozo? </span>
+      </p>
+      <br>
+      <button onclick="responder(false, 'pregunta6-5')" class="posiblesRespuestas">29</button>
+      <br>
+      <button onclick="responder(false, 'pregunta6-5')" class="posiblesRespuestas">30</button>
+      <br>
+      <button onclick="responder(true, 'pregunta6-5')" class="posiblesRespuestas">28</button>
+      <br>
+    </div>
+
+    <div class="" id="pregunta7-5">
+      <p class="parrafoPregunta"><span class="spanNumero">7) </span> <br> 32 27 48 19 <br>
+        34 32 56<span class="spanPregunta"> ?</span>
+      </p>
+      <br>
+      <button onclick="responder(false, 'pregunta7-5')" class="posiblesRespuestas">31</button>
+      <br>
+      <button onclick="responder(true, 'pregunta7-5')" class="posiblesRespuestas">30</button>
+      <br>
+      <button onclick="responder(false, 'pregunta7-5')" class="posiblesRespuestas">32</button>
+      <br>
+    </div>
+    <button type="button" name="button" onclick="mostrarRespuesta()" class="botonMostrarRespuesta">Mostrar explicaciones</button>
+    <button type="button" onclick="mostrarRespuesta()" class="botonNoMostrar">Ocultar explicaciones</button>
+    <br>
+    <p id="respuestas" class="respuestas">EXPLICACIONES: <br>
+      1) Los digitos primero se multiplican, despues se suman y por ultimo se restan, poniendo todos los resultados individualmente <br> 2) Jueves <br> 3) 062 <br>4) Poniendo una "x" entre el 9 y el 8, multiplicandolos <br>5) Pondrian 24 huevos.
+      hay 4 veces mas gallinas y 4 veces mas dias por lo que la cantidad de huevos se multiplica por 16. 16 x 1.5 = 24</p>
+
+    <br>
+    <p></p>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+
+</html>

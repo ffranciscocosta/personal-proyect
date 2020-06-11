@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>DIFICULTAD 1</title>
+
+  </head>
+
+  <body>
+
+
+
+    <div class="containerDos">
+
+      <button class="glow-on-hover" type="button"><a class="a" href="index.html">VOLVER</a></button>
+      <button type="button" id="cambiarTamaño" class="btn btn-border-1" onclick="agrandarTamaño()">Agrandar el tamaño de la letra</button>
+      <button type="button" name="button" class="btn btn-border-1" onclick="cambiarFondo()">Cambiar fondo</button>
+    </div>
+
+
+    <h1>DIFICULTAD 1</h1>
+    <h3>Puntaje: <span id="puntaje">0</span>/7 </h3>
+
+
+
+    <section id="animations" class="c-container">
+
+      <div class="o-circle__sign"></div>
+
+    </section>
+
+
+
+
+
+    <div class "" id="pregunta1-1">
+      <p id="parrafoPregunta" class="parrafoPregunta"><span class="spanNumero">1) </span>¿Como lanzar una pelota de tenis de forma que recorra una pequeña disitancia, se detenga, y regrese el mismo camino?</p>
+      <br>
+      <button onclick="responder(false, 'pregunta1-1')" class="posiblesRespuestas">La lanzas hacia abajo</button>
+      <br>
+      <button onclick="responder(true, 'pregunta1-1')" class="posiblesRespuestas">La lanzas para arriba</button>
+      <br>
+      <button onclick="responder(false, 'pregunta1-1')" class="posiblesRespuestas">la lanzas a un costado</button>
+      <br>
+    </div>
+
+    <div class "" id="pregunta2-1">
+      <p class="parrafoPregunta"><span class="spanNumero">2) </span>Cuantas moscas volando son <span class="spanPregunta">tres medias moscas mas mosca y media?</span></p>
+      <br>
+      <button onclick="responder(false, 'pregunta2-1')" class="posiblesRespuestas">3</button>
+      <br>
+      <button onclick="responder(true, 'pregunta2-1')" class="posiblesRespuestas">1</button>
+      <br>
+      <button onclick="responder(false, 'pregunta2-1')" class="posiblesRespuestas">2</button>
+      <br>
+    </div>
+
+    <div class "" id="pregunta3-1">
+      <p class="parrafoPregunta"><span class="spanNumero">3) </span>A es padre de B, pero no es hijo de A <span class="spanPregunta">¿Como es posible?</span></p>
+      <br>
+      <button onclick="responder(true, 'pregunta3-1')" class="posiblesRespuestas">Porque B es la hija</button>
+      <br>
+      <button onclick="responder(false, 'pregunta3-1')" class="posiblesRespuestas">Porque B es el hijo</button>
+      <br>
+      <button onclick="responder(false, 'pregunta3-1')" class="posiblesRespuestas">Porque B es el papa</button>
+      <br>
+    </div>
+
+    <div class "" id="pregunta4-1">
+      <p class="parrafoPregunta"><span class="spanNumero">4) </span>El padre de Bob tiene cinco hijos: Mama,Momo, Meme y Mumu. <span class="spanPregunta">¿Como se llama el cuarto hijo?</span></p>
+      <br>
+      <button onclick="responder(false, 'pregunta4-1')" class="posiblesRespuestas">Mimi</button>
+      <br>
+      <button onclick="responder(true, 'pregunta4-1')" class="posiblesRespuestas">Bob</button>
+      <br>
+      <button onclick="responder(false, 'pregunta4-1')" class="posiblesRespuestas">Ambas son correctas</button>
+      <br>
+    </div>
+    <div class "" id="pregunta5-1">
+      <p class="parrafoPregunta"><span class="spanNumero">5) </span>Dos pastores hablaban: <br>
+        ¿Porqué no me das una de tus ovejas, así tendremos igual cantidad? <br>
+        A lo que su amigo le responde: <br>
+        Mejor dame una de las tuyas así yo tendré el doble de ovejas que tú. <br>
+        <span class="spanPregunta">¿Cuántas ovejas tenia cada uno?</span></p>
+      <br>
+      <button onclick="responder(false, 'pregunta5-1')" class="posiblesRespuestas">3 y 2</button>
+      <br>
+      <button onclick="responder(false, 'pregunta5-1')" class="posiblesRespuestas">10 y 8</button>
+      <br>
+      <button onclick="responder(true, 'pregunta5-1')" class="posiblesRespuestas">5 y 7</button>
+      <br>
+    </div>
+    <div class "" id="pregunta6-1">
+      <p class="parrafoPregunta"><span class="spanNumero">6) </span>2 = 6 <br>
+        3 = 12 <br>
+        4 = 20 <br>
+        5 = 30 <br>
+        6 = 42 <br>
+        <span class="spanPregunta">9 = ?</span></p>
+      <br>
+      <button onclick="responder(true, 'pregunta6-1')" class="posiblesRespuestas">72</button>
+      <br>
+      <button onclick="responder(false, 'pregunta6-1')" class="posiblesRespuestas">81</button>
+      <br>
+      <button onclick="responder(false, 'pregunta6-1')" class="posiblesRespuestas">90</button>
+      <br>
+    </div>
+    <div class "" id="pregunta7-1">
+      <p class="parrafoPregunta"><span class="spanNumero">7) </span>Un camion iba hacia un pueblo, en el camino se encontro con 4 autos mas. <span class="spanPregunta">¿Cuantos vehiculos sabemos que se dirigian al pueblo?</span></p>
+      <br>
+      <button onclick="responder(false, 'pregunta7-1')" class="posiblesRespuestas">4</button>
+      <br>
+      <button onclick="responder(true, 'pregunta7-1')" class="posiblesRespuestas">1</button>
+      <br>
+      <button onclick="responder(false, 'pregunta7-1')" class="posiblesRespuestas">5</button>
+      <br><br><br>
+    </div>
+
+    <div class="emoji" id="emojiFeliz">
+      <a href="index.html">
+        <img src="emojifeliz.jpg" alt="Emoji Feliz">
+      </a>
+    </div>
+    <div class="emoji" id="emojiNormal">
+      <img src="emojinormal.jpg" alt="Emoji Normal">
+    </div>
+    <div class="emoji" id="emojiTriste">
+      <img src="emojitriste.jpg" alt="Emoji Triste">
+    </div>
+
+    <button type="button" name="button" onclick="mostrarRespuesta()" class="botonMostrarRespuesta">Mostrar explicaciones</button>
+    <button type="button" onclick="mostrarRespuesta()" class="botonNoMostrar">Dejar de mostrar explicaciones</button>
+    <br>
+    <p id="respuestas" class="respuestas">EXPLICACIONES: <BR></BR> 1) Dos <br> 2) Una <br> 3) Porque B es la hija <br>4) Se llama Bob</p>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
