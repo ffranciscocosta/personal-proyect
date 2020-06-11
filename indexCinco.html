@@ -8,10 +8,13 @@
   </head>
 
   <body>
-    <button class="glow-on-hover" type="button"><a href="index.html">VOLVER</a></button>
     <div class="containerDos">
+
+      <button class="glow-on-hover" type="button"><a class="a" href="index.html">VOLVER</a></button>
       <button type="button" id="cambiarTamaño" class="btn btn-border-1" onclick="agrandarTamaño()">Agrandar el tamaño de la letra</button>
+      <button type="button" name="button" class="btn btn-border-1" onclick="cambiarFondo()">Cambiar fondo</button>
     </div>
+
     <h1 class="tituloDificultad" class="vueltaa">DIFICULTAD 5</h1>
     <h3>Puntaje: <span id="puntaje">0</span>/7 </h3>
     <br>
@@ -107,8 +110,29 @@
       <br>
       <button onclick="responder(false, 'pregunta7-5')" class="posiblesRespuestas">32</button>
       <br>
+      <br>
+      <br>
     </div>
-    <button type="button" name="button" onclick="mostrarRespuesta()" class="botonMostrarRespuesta">Mostrar explicaciones</button>
+    <div class="emoji" id="emojiFeliz">
+      <a href="index.html">
+        <img src="emojifeliz.jpg" alt="Emoji Feliz">
+        <p>Felicitaciones! Has pasado al siguiente nivel con un gran puntaje, entre 6 y 7</p>
+      </a>
+    </div>
+    <div class="emoji" id="emojiNormal">
+      <a href="index.html">
+        <img src="emojinormal.jpg" alt="Emoji Normal">
+      </a>
+      <p>Felicitaciones! Has logrado obtener un puntaje entre 4 y 5 por lo que puedes pasar de nivel</p>
+    </div>
+    <div class="emoji" id="emojiTriste">
+      <a href="index.html">
+        <img src="emojitriste.jpg" alt="Emoji Triste">
+      </a>
+      <p>No has llegado al mimimo puntaje para pasar de nivel. Si quieres puedes intentarlo de nuevo.</p>
+    </div>
+
+    <!-- <button type="button" name="button" onclick="mostrarRespuesta()" class="botonMostrarRespuesta">Mostrar explicaciones</button>
     <button type="button" onclick="mostrarRespuesta()" class="botonNoMostrar">Ocultar explicaciones</button>
     <br>
     <p id="respuestas" class="respuestas">EXPLICACIONES: <br>
@@ -116,7 +140,7 @@
       hay 4 veces mas gallinas y 4 veces mas dias por lo que la cantidad de huevos se multiplica por 16. 16 x 1.5 = 24</p>
 
     <br>
-    <p></p>
+    <p></p> -->
     <script src="script.js" type="text/javascript"></script>
   </body>
 
