@@ -105,4 +105,3 @@ document.body.style.backgroundImage = "url("+fondo+")";
 // TODO: 1 - Aumentar tamaño de parrafo con boton
 // TODO: 2 - Cambiar Imagen de fondo con boton
 // TODO: 3 - Hacer un link que se pueda usar para acceder al JUEGO
-// TODO: Poner timer
