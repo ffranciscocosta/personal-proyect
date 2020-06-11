@@ -33,10 +33,15 @@ h1{
 a{
   display: inline-block;
   text-decoration: none;
-  color: white;
+
 }
 a.a{
   width: 100%;
+    color: white;
+}
+#siguienteNivel{
+  display: none;
+  color: #999999;
 }
 p{
   /* font-size: 17px; */
@@ -529,7 +534,6 @@ h2.title::after {
 
 .btn {
     position: relative;
-
     display: inline-block;
     margin: 3px;
     padding: 12px 27px;

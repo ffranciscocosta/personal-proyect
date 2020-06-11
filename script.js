@@ -54,16 +54,20 @@ function responder(ok = false, preg = false){
   preguntasRespondidas++;
   if(preguntasRespondidas == 7){
     emoji = "emojiTriste"
-    if (puntaje >3 && puntaje >6) {
+    if (puntaje <=3 && preguntasRespondidas == 7) {
       emoji = "emojiTriste"
     }
-    if (puntaje =5) {
+    if (puntaje >=4 && puntaje <=6) {
       emoji = "emojiNormal"
+      document.getElementById("siguienteNivel").style.display = "inline-block"
     }
     if (puntaje >=6) {
       emoji = "emojiFeliz"
+      document.getElementById("siguienteNivel").style.display = "inline-block"
+
     }
     document.getElementById(emoji).style.display = "block"
+
 // if(confirm("Deseas volver a la pagina principal?")){window.location.href = "index.html";}
 }
   document.getElementById(preg).style.display= "none";
@@ -104,4 +108,4 @@ document.body.style.backgroundImage = "url("+fondo+")";
 
 // TODO: 1 - Aumentar tamaño de parrafo con boton
 // TODO: 2 - Cambiar Imagen de fondo con boton
-// TODO: 3 - Hacer un link que se pueda usar para acceder al JUEGO  
+// TODO: 3 - Hacer un link que se pueda usar para acceder al JUEGO
