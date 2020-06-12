@@ -103,6 +103,19 @@ fondo = "fondoDos.jpg"
 document.body.style.backgroundImage = "url("+fondo+")";
 }
 
+// function cambiarFondo(){
+// // document.body.style.backgroundImage = "url('fondoDos.jpg')";
+// if(fondo == "fondo.jpg"){
+// fondo = "fondoDos.jpg"
+// }if(fondo == "fondoDos.jpg"){
+//   fondo = "fondoTres.jpg"
+// }else{
+//   fondo = "fondo.jpg"
+// }
+// }
+// document.body.style.backgroundImage = "url("+fondo+")";
+// }
+
 
 
 
