@@ -40,16 +40,20 @@ var parrafo = document.getElementById("parrafoPregunta");
 }
 
 var puntaje = 0;
+// var puntajeDos = document.getElementById("puntajeDos");
+// puntajeDos = 0;
 var preguntasRespondidas = 0;
 
 function responder(ok = false, preg = false){
   if(ok){
     puntaje++;
+    // puntajeDos++;
     animateSection('success')
 
   }else{
     // puntaje--;
     animateSection('wrong')
+    // puntajeDos++;
   }
   preguntasRespondidas++;
   if(preguntasRespondidas == 7){
