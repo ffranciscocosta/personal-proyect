@@ -13,6 +13,9 @@ src: url("./fonts/PTSansNarrow-Regular.ttf");
 html{
 
 }
+#botonMostrar{
+  display: none;
+}
 .parrafoIntroduccion{
 font-family: 'Tenali Ramakrishna', sans-serif;
   padding: var(--paddingSM);
@@ -233,6 +236,9 @@ body {
   margin: 0px;
   height: 30px;
   width: 150px;
+}
+#botonDejarDeMostrar{
+  display: none;
 }
 .vuelta {
   text-decoration: none;

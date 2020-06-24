@@ -13,6 +13,16 @@ function mostrarRespuesta() {
 // Try edit message
 var lupa = false;
 
+function mostrarPreguntas(){
+  var pregunta = document.getElementsByClassName('parrafoPregunta');
+  pregunta.classList.toggle('botonNoMostrarPregunta')
+  if(event.target.innerHTML == "Mostrar respuestas"){
+    event.target.innerHTML = "Ocultar respuestas"
+  }else{
+    event.target.innerHTML = "Mostrar respuestas"
+  }
+}
+
 function agrandarTamaño(){
   var posiblesRespuestas = document.getElementsByClassName("posiblesRespuestas");
   var preguntas = document.getElementsByClassName('parrafoPregunta');
@@ -60,14 +70,19 @@ function responder(ok = false, preg = false){
     emoji = "emojiTriste"
     if (puntaje <=3 && preguntasRespondidas == 7) {
       emoji = "emojiTriste"
+            document.getElementById("botonMostrar").style.display = "block"
+
     }
     if (puntaje >=4 && puntaje <=6) {
       emoji = "emojiNormal"
       document.getElementById("siguienteNivel").style.display = "inline-block"
+      document.getElementById("botonMostrar").style.display = "block"
     }
     if (puntaje >=6) {
       emoji = "emojiFeliz"
       document.getElementById("siguienteNivel").style.display = "inline-block"
+            document.getElementById("botonMostrar").style.display = "block"
+
 
     }
     document.getElementById(emoji).style.display = "block"
