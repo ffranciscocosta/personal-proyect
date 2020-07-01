@@ -14,12 +14,14 @@ function mostrarRespuesta() {
 var lupa = false;
 
 function mostrarPreguntas(){
-  var pregunta = document.getElementsByClassName('parrafoPregunta');
-  pregunta.classList.toggle('botonNoMostrarPregunta')
-  if(event.target.innerHTML == "Mostrar respuestas"){
-    event.target.innerHTML = "Ocultar respuestas"
+
+  var pregunta = document.getElementsById('parrafoPregunta');
+
+  pregunta.classList.toggle('noOcultado');
+  if(event.target.innerHTML == "Mostrar preguntas"){
+    event.target.innerHTML = "Ocultar preguntas";
   }else{
-    event.target.innerHTML = "Mostrar respuestas"
+    event.target.innerHTML = "Mostrar preguntas";
   }
 }
 
@@ -70,18 +72,21 @@ function responder(ok = false, preg = false){
     emoji = "emojiTriste"
     if (puntaje <=3 && preguntasRespondidas == 7) {
       emoji = "emojiTriste"
-            document.getElementById("botonMostrar").style.display = "block"
+      document.getElementById("botonMostrar").style.display = "block"
+      document.getElementById("botonPreguntas").style.display = "block"
 
     }
     if (puntaje >=4 && puntaje <=6) {
       emoji = "emojiNormal"
       document.getElementById("siguienteNivel").style.display = "inline-block"
       document.getElementById("botonMostrar").style.display = "block"
+      document.getElementById("botonPreguntas").style.display = "block"
     }
     if (puntaje >=6) {
       emoji = "emojiFeliz"
       document.getElementById("siguienteNivel").style.display = "inline-block"
-            document.getElementById("botonMostrar").style.display = "block"
+      document.getElementById("botonMostrar").style.display = "block"
+      document.getElementById("botonPreguntas").style.display = "block"
 
 
     }

@@ -46,6 +46,9 @@ a.a{
   display: none;
   color: #999999;
 }
+#botonPreguntas{
+  display: none;
+}
 p{
   /* font-size: 17px; */
   margin: 2px;
@@ -272,6 +275,12 @@ body {
 }
 .noOculto{
   display: block;
+}
+.noOcultado{
+  display: block;
+}
+#botonNoMostrarPreguntas{
+  display: none;
 }
 .botonGrande{
   margin: 5px;
