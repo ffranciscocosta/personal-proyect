@@ -13,16 +13,50 @@ function mostrarRespuesta() {
 // Try edit message
 var lupa = false;
 
+// function mostrarPreguntas(){
+//
+//   var pregunta = document.getElementsById('parrafoPregunta');
+//
+//   pregunta.classList.toggle('noOcultado');
+//   if(event.target.innerHTML == "Mostrar preguntas"){
+//     event.target.innerHTML = "Ocultar preguntas";
+//   }else{
+//     event.target.innerHTML = "Mostrar preguntas";
+//   }
+// }
+
+
 function mostrarPreguntas(){
+var preguntas = document.getElementsByClassName("parrafoPregunta");
+// preguntas.classList.toggle('noOcultado');
+for(i = 0; i < preguntas.length; i++){
+if(  preguntas[i].parentElement.style.display == "block" ){
+  preguntas[i].parentElement.style.display = "none"
 
-  var pregunta = document.getElementsById('parrafoPregunta');
 
-  pregunta.classList.toggle('noOcultado');
-  if(event.target.innerHTML == "Mostrar preguntas"){
-    event.target.innerHTML = "Ocultar preguntas";
-  }else{
-    event.target.innerHTML = "Mostrar preguntas";
-  }
+}else{
+  preguntas[i].parentElement.style.display = "block"
+
+}
+}if(  event.target.innerHTML == "Mostrar preguntas" ){
+  event.target.innerHTML = "Ocultar preguntas"
+  // document.getElementsByClassName('emoji').style.display = "none"; 
+
+
+}else{
+  event.target.innerHTML = "Mostrar preguntas"
+
+}
+
+var posiblesRespuestas = document.getElementsByClassName("posiblesRespuestas");
+console.log(preguntas)
+for (i=0; i<posiblesRespuestas.length; i++){
+  posiblesRespuestas[i].style.display = "none";
+  // parrafo[i].style.fontSize = fontSize;
+
+
+}
+
 }
 
 function agrandarTamaño(){
@@ -74,7 +108,7 @@ function responder(ok = false, preg = false){
       emoji = "emojiTriste"
       document.getElementById("botonMostrar").style.display = "block"
       document.getElementById("botonPreguntas").style.display = "block"
-
+      document.getElementById("reload").style.display = "block"
     }
     if (puntaje >=4 && puntaje <=6) {
       emoji = "emojiNormal"
