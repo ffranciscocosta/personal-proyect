@@ -40,7 +40,8 @@ if(  preguntas[i].parentElement.style.display == "block" ){
 }
 }if(  event.target.innerHTML == "Mostrar preguntas" ){
   event.target.innerHTML = "Ocultar preguntas"
-  // document.getElementsByClassName('emoji').style.display = "none"; 
+  // document.getElementsByClassName('emoji').style.display = "none";
+  // ocultarEmojis()
 
 
 }else{
@@ -56,7 +57,12 @@ for (i=0; i<posiblesRespuestas.length; i++){
 
 
 }
-
+// function ocultarEmojis(){
+//   document.getElementsByClassName("emoji").style.display = "none"
+// }
+}
+function ocultarEmojis(){
+  document.getElementsByClassName("emo")
 }
 
 function agrandarTamaño(){

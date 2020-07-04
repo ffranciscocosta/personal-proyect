@@ -82,6 +82,9 @@ body {
   border: 1px solid black;
   margin:5px;
   border-radius: var(--borderRSM);
+  width: 260px;
+  text-align: center;
+
 }
 
 
@@ -309,7 +312,9 @@ body {
   height: 130px;
   margin: 0 auto;
 }
-
+header nav ul li{
+  letter-spacing: 0,7px;
+}
 
 .hide{
   display:none;
